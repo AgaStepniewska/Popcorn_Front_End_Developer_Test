@@ -218,6 +218,7 @@ footer p {
 		font-size: 18px;
 		font-weight: bold;
 	}
+	
 	#icons .iconWidth {
 		display: flex;
 		flex-direction: row;
@@ -268,7 +269,10 @@ footer p {
 	#aboutUs {
 		max-width: 70%;
 	}
+	#icons {
+	min-height: 20vh;
 	
+	}
 	#icons .iconWidth {
 		width: 98%;
 	}
