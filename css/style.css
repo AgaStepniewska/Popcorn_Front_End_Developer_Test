@@ -1,0 +1,270 @@
+body {
+	font-family: "Open sans", sans-serif;
+	max-width: 1500px;
+	margin: 0 auto; }
+[class*="col-"] {
+  Float: left;
+  min-height: 1px;
+  text-align: center;
+  margin: 0;
+  position: relative; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+p {
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+
+.hero {
+	background-image: url(../images/heroImage.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	
+}
+.hero .navbar {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 88.5px;
+	min-height: 10%;
+ }
+.hero .navbar ul {
+	margin-right: 169px;
+	margin-top: 15px;
+}
+.hero .navbar li a {
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.logo {
+	margin-left:168px;
+	margin-top: 15px;
+	width: 50%px;
+	height: auto;
+}
+.hero .slogan {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.hero .slogan h2 {
+	font-size: 100px;
+	line-height: 120px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	
+}
+    
+header .navbar button {
+	padding-top: 10px; 
+}
+header .navbar button span {
+	background-color: #fff; 
+}
+.navbar-toggle .icon-bar {
+	width: 22px;
+	height: 2px; 
+	transition: all 0.2s;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+}
+.dropdown-menu ul li {
+	float: right !important;
+}
+  .dropdown-menu li a {
+    color: #ffffff; }
+
+.dropdown-menu li a:focus {
+  background-color: transparent;
+  background-image: none; }
+
+.dropdown-menu li a:hover {
+  background-color: transparent;
+  background-image: none; }
+
+header .navbar a:hover {
+  background-color: transparent; }
+
+
+.navbar-toggle {
+	border: none;
+	background: transparent !important;
+}
+.navbar-toggle:hover {
+	background: transparent !important;
+}
+
+.navbar-toggle .top-bar {
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+	opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+	transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+	opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+	transform: rotate(0);
+}
+#aboutUs {
+	text-align: center;
+	max-width: 35%;
+	margin: 5% auto;
+	margin-bottom: 8%;
+}
+#aboutUs h2 {
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: bold;
+}
+#aboutUs p {
+	font-weight: 300;
+	
+}
+	
+#icons {
+	min-height: 30vh;
+	background-color: #CCCCCC;	
+	width: 100%;
+}
+#icons .iconWidth {
+	width: 60%;
+	margin: 5% auto;
+}
+#icons .iconWidth .icon {
+	height: 111px;
+	width: auto;
+	padding: 20px 20px 0px 20px
+
+} 
+#contactUs .address .contact {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#contactUs .address .contact p {
+	text-align: left;
+	margin-top: 35%;
+}
+#contactUs .address img {
+	max-width: 100%;
+	height: auto;
+
+}
+
+footer {
+	width: 100%;
+	background-color: #CCCCCC;
+}
+footer p {
+	margin-left: 9%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	
+}
+@media(min-width: 768px) and (max-width: 1199px), (max-width: 768px) {
+ 	
+ 	.hero .navbar {
+ 		height: 18%;
+		background-color: #1d1d1b;
+ 	}
+	.hero .navbar ul {
+		margin-right: 0;
+		float: right;
+	}
+	.hero .navbar ul li a {
+		text-align: right;
+	}
+ 	.hero .slogan h2 {
+		font-size: 29px;
+		line-height: 35px;
+		font-weight: 600;
+		
+	} 
+	.logo {
+		margin-left: 5%;
+		width: 100px;
+		height: auto;
+	}
+	
+	#aboutUs h2 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	#icons .iconWidth {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		
+	}
+	#contactUs .address .contact p {
+		
+		margin: 5% auto 5%;
+		text-align: center;
+	}
+	footer p {
+		margin: auto;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		text-align: center;
+	}	
+	
+}
+@media(min-width: 768px) and (max-width: 1199px) {
+	#aboutUs {
+		max-width: 60%;
+
+	}
+	#icons .iconWidth {
+		width: 60%;
+	}
+
+ }
+@media(max-width: 768px) {
+	#aboutUs {
+		max-width: 50%;
+	}
+	#icons .iconWidth {
+		width: 98%;
+	}
+	#contactUs .address {
+		width: 80%;
+		margin-top: 5%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+	}
+	#contactUs .address .contact {
+		width: 100%;
+	}
+	#contactUs .address img {
+		display: none;
+	}
+}
