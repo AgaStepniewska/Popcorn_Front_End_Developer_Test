@@ -205,8 +205,6 @@ footer p {
 		text-align: right;
 	}
  	.hero .slogan h2 {
-		font-size: 11vh;
-		line-height: 11vh;
 		font-weight: 600;
 		
 	} 
@@ -234,7 +232,10 @@ footer p {
 		text-align: center;
 	}
 	#contactUs .row .hideOnMobile {
-		display: none;
+		display: none !important;
+	}
+	#contactUs .row .hideOnMobile img {
+		display: none !important;
 	}
 	footer p {
 		margin: auto;
@@ -252,12 +253,22 @@ footer p {
 	#icons .iconWidth {
 		width: 60%;
 	}
-
+	.hero .slogan h2 {
+		font-size: 11vh;
+		line-height: 11vh;
+		
+	}
  }
 @media(max-width: 768px) {
+	.hero .slogan h2 {
+		font-size: 9vh;
+		line-height: 9vh;
+		
+	}
 	#aboutUs {
 		max-width: 70%;
 	}
+	
 	#icons .iconWidth {
 		width: 98%;
 	}
