@@ -160,18 +160,18 @@ header .navbar a:hover {
 	padding: 20px 20px 0px 20px
 
 } 
-#contactUs .address .contact {
+#contactUs .row .address {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-#contactUs .address .contact p {
+#contactUs .row .address p {
 	text-align: left;
 	margin-top: 35%;
 }
-#contactUs .address img {
+#contactUs .row img {
 	max-width: 100%;
 	height: auto;
 
@@ -224,7 +224,7 @@ footer p {
 		justify-content: center;
 		
 	}
-	#contactUs .address .contact p {
+	#contactUs .row .address p {
 		
 		margin: 5% auto 5%;
 		text-align: center;
@@ -249,22 +249,22 @@ footer p {
  }
 @media(max-width: 768px) {
 	#aboutUs {
-		max-width: 50%;
+		max-width: 70%;
 	}
 	#icons .iconWidth {
 		width: 98%;
 	}
-	#contactUs .address {
+	#contactUs .row {
 		width: 80%;
 		margin-top: 5%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 5%;
 	}
-	#contactUs .address .contact {
+	#contactUs .row .address {
 		width: 100%;
 	}
-	#contactUs .address img {
+	#contactUs .row img {
 		display: none;
 	}
 }
